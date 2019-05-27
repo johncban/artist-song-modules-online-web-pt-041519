@@ -34,11 +34,11 @@ class Artist
     self.all.clear
   end
 =end
-
+=begin
   def self.count
     self.all.count
   end
-
+=end
   def add_song(song)
     @songs << song
     song.artist = self
