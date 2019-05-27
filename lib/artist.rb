@@ -26,10 +26,6 @@ class Artist
     @@artists
   end
 
-  def self.find_by_name(name)
-    @@artists.detect {|a| a.name == name}
-  end
-
 =begin
   def self.reset_all
     self.all.clear
