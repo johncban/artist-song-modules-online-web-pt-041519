@@ -35,6 +35,8 @@ class Artist
     @@artists.detect {
       |a| a.name == name
     }
+  end
+  
 
   def add_song(song)
     @songs << song
