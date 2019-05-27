@@ -5,7 +5,7 @@ require_relative '../lib/concerns/paramable.rb'
 require 'pry'
 
 class Artist
-  extend Memorable
+  extend Memorable::ClassMethods
   include Paramable
 
   attr_accessor :name
