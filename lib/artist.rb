@@ -5,23 +5,6 @@ require 'pry'
 class Artist
   extend Memorable
 
-  @@artists = []
-
- attr_accessor :name
-
- def initialize(name)
-   @name = name
- end
-
- def self.all
-   @@artists
- end
-
- def self.find_by_name(name)
-   @@artists.detect {|a| a.name == name}
- end
- 
-=begin
   attr_accessor :name
   attr_reader :songs
 
@@ -39,11 +22,11 @@ class Artist
   def self.all
     @@artists
   end
-
- #def self.reset_all
- #  self.all.clear
- #end
-
+=begin
+  def self.reset_all
+    self.all.clear
+  end
+=end
   def self.count
     self.all.count
   end
@@ -60,5 +43,4 @@ class Artist
   def to_param
     name.downcase.gsub(' ', '-')
   end
-=end
 end
