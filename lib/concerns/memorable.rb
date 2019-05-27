@@ -1,5 +1,4 @@
 module Memorable
-  module ClassMethods
 
     def reset_all
     end
@@ -7,5 +6,4 @@ module Memorable
     def count
     end
     
-  end
 end
